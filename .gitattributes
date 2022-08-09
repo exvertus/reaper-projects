@@ -9,7 +9,7 @@
 *.opus filter=lfs diff=lfs merge=lfs -text
 *.rx2 filter=lfs diff=lfs merge=lfs -text
 *.rex filter=lfs diff=lfs merge=lfs -text
-*. filter=lfs diff=lfs merge=lfs -text
+*.rcy filter=lfs diff=lfs merge=lfs -text
 *.avi filter=lfs diff=lfs merge=lfs -text
 *.mg filter=lfs diff=lfs merge=lfs -text
 *.mpeg filter=lfs diff=lfs merge=lfs -text
@@ -28,6 +28,6 @@
 *.bwf filter=lfs diff=lfs merge=lfs -text
 *.aif filter=lfs diff=lfs merge=lfs -text
 *.aiff filter=lfs diff=lfs merge=lfs -text
-*. filter=lfs diff=lfs merge=lfs -text
+*.caf filter=lfs diff=lfs merge=lfs -text
 *.caff filter=lfs diff=lfs merge=lfs -text
-*. filter=lfs diff=lfs merge=lfs -text
+*.wv filter=lfs diff=lfs merge=lfs -text
