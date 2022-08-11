@@ -1,0 +1,11 @@
+{
+    "targetPath": "$REAPER_REPO_PATH",
+    "sourcePath": "$REAPER_INSTALL_PATH",
+    "fileMap": {
+        "global-config": "reaper.ini",
+        "reaper-version": "reaper-install-rev.txt",
+        "mouse-shortcuts": "reaper-mouse.ini",
+        "vst-list": "reaper-vstplugins64.ini",
+        "vst-shell-list": "reaper-vstshells64.ini"
+    }
+}
