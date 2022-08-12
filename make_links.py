@@ -1,6 +1,5 @@
 """
-As a Reaper user well-versed in git and version control,
-I want a way for Reaper config changes to be reflected in my repository from DAW edits.
+Use hardlinks to ensure Reaper config changes are reflected in repository from DAW edits.
 """
 import logging
 import json
