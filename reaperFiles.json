@@ -1,6 +1,6 @@
 {
-    "targetPath": "$REAPER_REPO_PATH",
-    "sourcePath": "$REAPER_INSTALL_PATH",
+    "reaperPath": "$REAPER_INSTALL_PATH",
+    "repoPath": "$REAPER_REPO_PATH",
     "fileMap": {
         "global-config": "reaper.ini",
         "reaper-version": "reaper-install-rev.txt",
