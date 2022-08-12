@@ -15,6 +15,8 @@ but will keep things ready for platform-neutrality.
 
 #### Per-machine setup instructions
 
+1. Download [Git LFS](https://git-lfs.github.com/) and install it.
+1. Clone repo locally.
 1. Set environment variables:
   1. `REAPER_REPO_PATH` root path of this repo's local checkout
   1. `REAPER_INSTALL_PATH` path to reaper.exe, reaper.ini, etc after using *portable* install (this repo is un-tested on normal install)
