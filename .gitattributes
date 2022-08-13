@@ -31,3 +31,6 @@
 *.caf filter=lfs diff=lfs merge=lfs -text
 *.caff filter=lfs diff=lfs merge=lfs -text
 *.wv filter=lfs diff=lfs merge=lfs -text
+*.wmf filter=lfs diff=lfs merge=lfs -text
+*.vlc filter=lfs diff=lfs merge=lfs -text
+*.ffmpeg filter=lfs diff=lfs merge=lfs -text
