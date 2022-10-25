@@ -2,10 +2,7 @@
     "reaperPath": "$REAPER_INSTALL_PATH",
     "repoPath": "$REAPER_REPO_PATH",
     "fileMap": {
-        "global-config": "reaper.ini",
         "reaper-version": "reaper-install-rev.txt",
-        "mouse-shortcuts": "reaper-mouse.ini",
-        "vst-list": "reaper-vstplugins64.ini",
-        "vst-shell-list": "reaper-vstshells64.ini"
+        "mouse-shortcuts": "reaper-mouse.ini"
     }
 }

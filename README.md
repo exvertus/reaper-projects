@@ -10,10 +10,7 @@ In addition to song projects, the goal is to track...
 - templates
 - patches
 
-...in an automation fashion.
-
-Note: I am currently assuming a Windows environment with this because it meets my personal requirements,
-but will keep things ready for future platform-neutrality.
+Note: Only currently tested on Windows.
 
 #### Setup
 
@@ -28,4 +25,5 @@ but will keep things ready for future platform-neutrality.
     1. `General/Paths >`
       1. `Default path to save new projects=%REAPER_REPO_PATH%\git\reaper-projects\projects`
       1. `Default recording path, when project is unsaved and no recording path is configured=%REAPER_REPO_PATH%\git\reaper-projects\projects\new`
-  1. Run `python make_links.py reaperFiles.json` to sync config files via hardlinks.
+  1. Run `python sync_config.py reaperFiles.json` to sync config files via hardlinks.
+    1. TODO: Add sync_config call to an on_save hook in Reaper.
