@@ -34,3 +34,4 @@
 *.wmf filter=lfs diff=lfs merge=lfs -text
 *.vlc filter=lfs diff=lfs merge=lfs -text
 *.ffmpeg filter=lfs diff=lfs merge=lfs -text
+*.reapeaks filter=lfs diff=lfs merge=lfs -text
