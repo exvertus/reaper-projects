@@ -32,13 +32,22 @@ def copy_readonlys(fp):
     if copy_to.exists():
         shutil.rmtree(copy_to, onerror=readonly_handler)
     copy_to.mkdir()
-    for name, repo_file in config_map['fileMap'].items():
-        source = Path(copy_from, repo_file)
+    for name, reaper_file in config_map['fileMap'].items():
+        source = Path(copy_from, reaper_file)
         destination = Path(copy_to, name)
         shutil.copy(source, destination)
         destination.chmod(S_IREAD)
         logging.info(f"Copied {source} to {destination}...")
-    logging.info(f"Copied {len(config_map['fileMap'])} files.")
+    for repo_dir, reaper_dir in config_map['dirMap'].items():
+        source = Path(copy_from, reaper_dir)
+        destination = Path(copy_to, repo_dir)
+        shutil.copytree(source, destination, dirs_exist_ok=True)
+        for ini in destination.rglob("*.ini"):
+            ini.chmod(S_IREAD)
+        logging.info(f"Copied {source} to {destination}...")
+    logging.info(
+        f"Copied {len(config_map['fileMap'])} files "
+        f"and {len(config_map['dirMap'])} folders.")
 
 if __name__ == '__main__':
     map_path = './reaperFiles.json'
