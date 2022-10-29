@@ -4,5 +4,8 @@
     "fileMap": {
         "reaper-version": "reaper-install-rev.txt",
         "mouse-shortcuts": "reaper-mouse.ini"
+    },
+    "dirMap": {
+        "common/presets": "presets"
     }
 }
